@@ -29,6 +29,14 @@ MP4 verification re-probes the candidate, compares the approved mapping, codec i
 
 Ownership schema 2 binds an explicit container to its fixed `candidate.mkv` or `candidate.mp4` layout and matching destination. Original version-1 records remain valid only as the exact legacy MKV layout; unknown or inconsistent versions/containers never authorize cleanup, publication or termination. Both formats share `JobCoordinator`, sequential `BatchCoordinator`, source/collision checks, warning ownership, no-overwrite publication and cleanup. Queue and preset schemas acquire no stream indexes or execution authority.
 
+## Runtime tool distribution
+
+The candidate builds only `ffmpeg` and `ffprobe` from the same pinned FFmpeg source, with explicit static zlib and a disabled-autodetect local-file/pipe configuration. `FfmpegToolPaths` verifies its distinct `9.0.2-TrackTrim-source-2a571b606854` identity. Complete source archives, the local recipe, actual configuration/compiler observations and hashed worker/material receipts accompany each build. Build-only GCC/MinGW-w64, Make, NASM and MSYS2 are not application runtime dependencies; no ffplay or optional external codec/hardware library is selected. A verified local cache may reuse an identified build; native platform CI constructs and executes its own workers. No bit-identical cross-toolchain result is claimed.
+
+Linux MKVToolNix 102.0 executable bytes and the exact included/omitted AppImage payload policy remain unchanged. Windows builds the same version's CLI pair from pinned source and UCRT64 packages, without the GUI. QtCore remains required. The actual recursive PE-import closure, DLL-to-binary-package hashes, binary BUILDINFO-to-source PKGBUILD matches, complete source/patch archives and original notices accompany a hashed build receipt. A separate validation boundary checks every worker/material and actual import before acquisition; there is no official-binary fallback. Host-only build tools never become application prerequisites. Existing dependency, application, package, relocation and clean-container checks remain mandatory. The [distribution closure](verification/release-distribution-closure.md) keeps source delivery and owner decisions separate from build provenance.
+
+Capability inspection admits at most one **distinct** referenced QuickTime chapter-track ID. Several media tracks may reference that same track. This preflight restriction closes the aggregate-chapter reporting gap before candidate reservation, without adding a general chapter parser or weakening the existing Nero/QuickTime consistency checks.
+
 ## Job ownership and publication
 
 The Application job coordinator owns one approved plan, candidate, tool outcome, verification evidence, review decision, publication fact, and cleanup result. A gate prevents conflicting jobs. UI state disables conflicting edits while the job/review owns its plan.
